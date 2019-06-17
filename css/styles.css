@@ -14,7 +14,7 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+	position: relative;
 }
 
 ul, li {
@@ -84,12 +84,13 @@ nav h1 a {
 }
 
 #breadcrumb {
-  padding: 0.8em 3em 1em;
+  display: flex;
+  align-items: center;
+  height: 3.5em;
   list-style: none;
   background-color: #eee;
   font-size: 1em;
   margin: 0;
-  width: 100%;
 }
 
 /* Display list items side by side */
@@ -214,11 +215,12 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+.inside header{
   position: fixed;
   top: 0;
+  height: 7em;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .inside #map-container {
@@ -307,7 +309,7 @@ nav h1 a {
   margin: 0 0 2em;
   overflow: hidden;
   position: relative;
-  width: 85%;
+  width: 100%;
 }
 
 .reviewDiv {
@@ -352,19 +354,13 @@ nav h1 a {
 }
 
 @media only screen and (min-width: 500px){
-  #restaurant-container, #reviews-container,
-  .inside #footer {
-    width: 50%;
+  .filter-options {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+}
 
-  #reviews-list li {
-    width: 85%;
-  }
-
-  #breadcrumb {
-    width: calc(50% - 5em);
-  }
-  
+@media only screen and (min-width: 700px){ 
   .inside #map-container {
     height: 87%;
     width: 50%;
@@ -373,8 +369,16 @@ nav h1 a {
     top: 5em;
   }
 
-  .filter-options {
-    flex-direction: row;
-    flex-wrap: wrap;
+  #breadcrumb {
+    width: calc(50% - 6em);
   }
+
+  #restaurant-container, #reviews-container {
+    width: 50%;
+  }
+
+  #reviews-list li {
+    width: 85%;
+  }
+
 }
