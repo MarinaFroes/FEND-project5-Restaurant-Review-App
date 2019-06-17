@@ -7,7 +7,7 @@
 body,td,th,p{
   box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.8em;
+	font-size: 1em;
 	color: #333;
   line-height: 1.5;
 }
@@ -271,7 +271,8 @@ nav h1 a {
 	width: 100%;
 }
 
-#restaurant-container, #reviews-container {
+#restaurant-container, 
+#reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   margin: 0;
@@ -357,18 +358,17 @@ nav h1 a {
     width: 50%;
     position: fixed;
     right: 0;
-    top: 5em;
+    top: 5.5em;
   }
 
-  #breadcrumb {
+  #breadcrumb,
+  #restaurant-container, 
+  #reviews-container,
+  #reviews-list li {
     width: calc(50% - 6em);
   }
 
-  #restaurant-container, #reviews-container {
+  .inside #footer {
     width: 50%;
-  }
-
-  #reviews-list li {
-    width: 85%;
   }
 }
