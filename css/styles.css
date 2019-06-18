@@ -39,8 +39,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #3397db;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a img {
@@ -87,7 +86,7 @@ section {
   text-transform: uppercase;
 }
 
-#footer strong {
+#footer a {
   color: #fff;
 }
 
