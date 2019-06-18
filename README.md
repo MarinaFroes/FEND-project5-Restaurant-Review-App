@@ -60,3 +60,5 @@ It works fine in Chrome (Version 73.0.3683.86), Firefox (Version 66.0.2) and Saf
 
 - [W3 Schools Documentation](https://www.w3schools.com/)
 - [MDN Documentation](https://developer.mozilla.org)
+- [W3 Org Website](https://www.w3.org/TR/html-aria/#web-developer-requirements-for-use-of-aria-in-html)
+- [WebAIM Page Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
