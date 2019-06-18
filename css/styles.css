@@ -91,6 +91,22 @@ section {
   color: #fff;
 }
 
+/* ====================== Skip Link ========================*/
+.skip-link {
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  color: #000;
+  background: #fff;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 2px solid #eee;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* ====================== Navigation ====================== */
 nav {
   display: flex;
