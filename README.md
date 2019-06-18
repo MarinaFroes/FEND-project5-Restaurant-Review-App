@@ -9,7 +9,7 @@ This Restaurant Review App is the last project of the Udacity Front-End Nanodegr
 - JavaScript Style Guide
 - Git Style Guide
 
-The HTML and CSS files were validated by the following validators  without any errors or warnings.
+The HTML and CSS files were validated by the following validators:
 - [W3C HTML Validator](https://jigsaw.w3.org/css-validator/)
 - [W3C CSS Validator](https://validator.w3.org/)
 
