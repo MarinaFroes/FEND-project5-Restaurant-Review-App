@@ -170,6 +170,12 @@ nav h1 a {
   background-color: #ccc;
 }
 
+/* Map heading available only to screen readers */
+#map-heading {
+  position: absolute;
+  left: -1000rem;
+}
+
 .leaflet-container a {
   color: #185d8c !important;
 }
@@ -412,7 +418,7 @@ nav h1 a {
 
 @media only screen and (min-width: 700px) {
   .inside #map-container {
-    height: 87%;
+    height: calc(100% - 5.5rem);
     width: 50%;
     position: fixed;
     right: 0;
@@ -423,7 +429,7 @@ nav h1 a {
   #restaurant-container,
   #reviews-container,
   #reviews-list li {
-    width: calc(50% - 6em);
+    width: calc(50% - 5em);
   }
 
   .inside #footer {
