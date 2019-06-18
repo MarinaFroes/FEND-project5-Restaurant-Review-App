@@ -152,14 +152,14 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-  color: #044f90;
+  color: var(--main-font-color);
   text-decoration: none;
 }
 
 /* Add a color and underline on mouse-over */
 #breadcrumb li a:hover,
 #breadcrumb li a:focus {
-  color: #02274b;
+  color: #491f04;
   text-decoration: underline;
 }
 
