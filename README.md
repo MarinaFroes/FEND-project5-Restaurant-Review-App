@@ -1,5 +1,4 @@
-
-![Favicon](/img/favicon.png) 
+![logo](/img/favicon.png) 
 # Restaurant Review App  
 ## Udacity Front-End Nanodegree Project 5 - Introduction
 
@@ -15,46 +14,41 @@ The HTML and CSS files were validated by the following validators:
 
 ## Overview
 
-This project is organized as follows:
- - index.html 
- - restaurant.html
- - README.md 
- - /css
-   - styles.css
- - /data
-   - restaurants.json
- - /img
-   - favicon.png
-   - 1.jpg
-   - 2.jpg
-   - 3.jpg
-   - 4.jpg
-   - 5.jpg
-   - 6.jpg
-   - 7.jpg
-   - 8.jpg
-   - 9.jpg
-   - 10.jpg
- - /js
-   - main.js  
-   - dbhelper.js
-   - restaurant_info.js
+![screenshot](./img/screenshot.png)
 
 ## Udacity Specification
 
-- You will be provided code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality.
+- It was provided code for a restaurant reviews website. The code had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn't include any standard accessibility features, and it didn't work offline at all. My job was to update the code to resolve these issues while still maintaining the included functionality.
  
 ## Udacity Requirements
 
-- Make the provided site fully responsive. All of the page elements should be usable and visible in any viewport, including desktop, tablet, and mobile displays. Images shouldn't overlap, and page elements should wrap when the viewport is too small to display them side by side.
-- Make the site accessible. Using what you've learned about web accessibility, ensure that alt attributes are present and descriptive for images. Add screen-reader-only attributes when appropriate to add useful supplementary text. Use semantic markup where possible, and aria attributes when semantic markup is not feasible.
-- Cache the static site for offline use. Using Cache API and a ServiceWorker, cache the data for the website so that any page (including images) that has been visited is accessible offline.
+### Responsive Design
+- [x] All of the page elements should be usable and visible in any viewport, including desktop, tablet, and mobile displays.
+- [x] Images shouldn't overlap, and page elements should wrap when the viewport is too small to display them side by side.
+- [x] Mobile first approach
+- [x] The project contains a viewport meta tag
+
+### Accessibility
+- [x] Ensure that alt attributes are present and descriptive for images. - [x] Add screen-reader-only attributes when appropriate to add useful supplementary text. 
+- [x] Use semantic markup where possible, and aria attributes when semantic markup is not feasible.
+- [x] Logical focus order
+- [x] Skip link
+- [x] Aria-role where necessary
+- [x] High-contrast colors
+
+### Offline Availability
+- [x] Using Cache API and a ServiceWorker, cache the data for the website so that any page (including images) that has been visited is accessible offline.
 
 ## How to install and use it?
 
 - Download the files, cd into directory and run:
-  - npm install
-  - npm start
+  ```bash
+  npm start 
+  ```
+  or 
+  ```bash
+  python -m SimpleHTTPServer 8000
+  ```
 - Access the server in the browser: http://localhost:8000/
 - Filter the restaurants by neighborhood and cuisine
 - Chose the desired restaurant and read the reviews  
