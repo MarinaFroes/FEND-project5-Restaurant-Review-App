@@ -52,9 +52,12 @@ This project is organized as follows:
 
 ## How to install and use it?
 
-Considering it uses only vanilla JavaScript, HTML and CSS, it is not necessary to install additional features. 
-Just download the files and double click on the index.html file.
-It works fine in Chrome (Version 73.0.3683.86), Firefox (Version 66.0.2) and Safari (Version 12.0.3).
+- Download the files, cd into directory and run:
+  - npm install
+  - npm start
+- Access the server in the browser: http://localhost:8000/
+- Filter the restaurants by neighborhood and cuisine
+- Chose the desired restaurant and read the reviews  
 
 ## References
 
@@ -62,3 +65,4 @@ It works fine in Chrome (Version 73.0.3683.86), Firefox (Version 66.0.2) and Saf
 - [MDN Documentation](https://developer.mozilla.org)
 - [W3 Org Website](https://www.w3.org/TR/html-aria/#web-developer-requirements-for-use-of-aria-in-html)
 - [WebAIM Page Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [NPM Documentation](https://docs.npmjs.com/)
