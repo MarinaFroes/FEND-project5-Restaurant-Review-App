@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "python -m SimpleHTTPServer 8000"
+    "start": "python -m SimpleHTTPServer 8000",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,12 +16,17 @@
     "Udacity",
     "FEND",
     "Front-End",
-    "Nanodegree"
+    "Nanodegree",
+    "Service Worker",
+    "Accessibility"
   ],
   "author": "Marina Froes Almeida Costa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarinaFroes/FEND-project5-Restaurant-Review-App/issues"
   },
-  "homepage": "https://marinafroes.github.io/FEND-project5-Restaurant-Review-App/"
+  "homepage": "https://marinafroes.github.io/FEND-project5-Restaurant-Review-App/",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
