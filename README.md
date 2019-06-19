@@ -23,21 +23,22 @@ The HTML and CSS files were validated by the following validators:
 ## Udacity Requirements
 
 ### Responsive Design
-- [x] All of the page elements should be usable and visible in any viewport, including desktop, tablet, and mobile displays.
-- [x] Images shouldn't overlap, and page elements should wrap when the viewport is too small to display them side by side.
+- [x] All of the page elements are usable and visible in any viewport, including desktop, tablet, and mobile displays.
+- [x] Images don't overlap, and page elements wrap when the viewport is too small to display them side by side.
 - [x] Mobile first approach
-- [x] The project contains a viewport meta tag
+- [x] There is a viewport meta tag
 
 ### Accessibility
-- [x] Ensure that alt attributes are present and descriptive for images. - [x] Add screen-reader-only attributes when appropriate to add useful supplementary text. 
-- [x] Use semantic markup where possible, and aria attributes when semantic markup is not feasible.
+- [x] Alt attributes are present and descriptive for images. 
+- [x] Screen-reader-only attributes when appropriate to add useful supplementary text. 
+- [x] Semantic markup used where possible, and aria attributes when semantic markup is not feasible.
 - [x] Logical focus order
 - [x] Skip link
 - [x] Aria-role where necessary
 - [x] High-contrast colors
 
 ### Offline Availability
-- [x] Using Cache API and a ServiceWorker, cache the data for the website so that any page (including images) that has been visited is accessible offline.
+- [x] Cache API and a ServiceWorker, cache the data for the website so that any page (including images) that has been visited is accessible offline.
 
 ## How to install and use it?
 
