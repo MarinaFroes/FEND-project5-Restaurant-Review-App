@@ -1,0 +1,26 @@
+{
+  "name": "fend-restaurant-review",
+  "version": "1.0.0",
+  "description": "Udacity Front-End Nanodegree Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python -m SimpleHTTPServer 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaFroes/FEND-project5-Restaurant-Review-App.git"
+  },
+  "keywords": [
+    "Udacity",
+    "FEND",
+    "Front-End",
+    "Nanodegree"
+  ],
+  "author": "Marina Froes Almeida Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaFroes/FEND-project5-Restaurant-Review-App/issues"
+  },
+  "homepage": "https://github.com/MarinaFroes/FEND-project5-Restaurant-Review-App#readme"
+}
