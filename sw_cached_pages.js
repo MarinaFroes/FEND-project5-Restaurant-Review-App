@@ -1,4 +1,5 @@
-const cacheName = "v1";
+const appName = "restaurant-review"
+const cacheName = `${appName}-v1`;
 
 // Call install event
 self.addEventListener("install", event => {
@@ -43,7 +44,7 @@ self.addEventListener("fetch", event => {
       .catch(err => {
         // If it is offline, the catch will return the caches
         console.log(err);
-        caches.match(event.request).then(response => response);
+        caches.match(event.request).then(response => response || fetch(event.request));
       })
   );
 });
