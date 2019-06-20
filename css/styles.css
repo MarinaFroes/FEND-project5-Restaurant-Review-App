@@ -172,7 +172,7 @@ nav h1 a {
   background-color: #ccc;
 }
 
-/* Map heading available only to screen readers */
+/* Map heading out of the screen - available only to screen readers */
 #map-heading {
   position: absolute;
   left: -1000rem;
@@ -245,7 +245,7 @@ nav h1 a {
   min-height: 15rem;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: var(--main-color, sienna);
   font-family: Arial, sans-serif;
   font-size: 1.2rem;
@@ -315,7 +315,7 @@ nav h1 a {
 }
 
 #restaurant-img {
-  padding-top: 2em;
+  padding-top: 0;
   width: 100%;
 }
 
@@ -341,9 +341,12 @@ nav h1 a {
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  margin: 0;
   padding: 3rem 2rem;
   max-width: 100%;
+}
+
+#restaurant-container {
+  margin: 6rem 0 0 0;
 }
 
 #reviews-container h2 {

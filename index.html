@@ -21,13 +21,14 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" aria-labelledby="map-heading">
+      <!-- Heading out of the sreen - accessible by screen readers -->
       <h2 id="map-heading">Map with restaurants location</h2>
-      <div id="map"></div>
+      <div id="map" aria-label="location" role="application"></div>
     </section>
-    <section>
+    <section aria-labelledby="filter-heading">
       <div class="filter-options" id="filter">
-        <h2>Filter Results</h2>
+        <h2 id="filter-heading">Filter Results</h2>
         <select 
           id="neighborhoods-select"
           aria-label="neighborhoods" 
