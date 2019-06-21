@@ -1,6 +1,6 @@
-const cacheName = "restaurant-review-v3";
+const cacheName = "restaurant-review-v1";
 
-// Call install event
+//Install
 self.addEventListener("install", event => {
   console.log("Service Worker installed");
 });
@@ -24,9 +24,10 @@ self.addEventListener("activate", event => {
   );
 });
 
-//Call Fetch Event - show cached files if we are offline
+//Call Fetch Event - show cached files first
 self.addEventListener("fetch", event => {
-  console.log("Service Worker Fetching");
+  console.log("Service Worker Fetching: " + event.request.url);
+  // Fetch all the responses and save them to caches
   event.respondWith(
     fetch(event.request)
       .then(response => {
@@ -41,7 +42,6 @@ self.addEventListener("fetch", event => {
         return response;
       })
       .catch(err => {
-        // If it is offline, the catch will return the caches
         console.log(err);
         caches
           .match(event.request)
