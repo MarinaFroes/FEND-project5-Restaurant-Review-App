@@ -1,4 +1,4 @@
-const cacheName = "restaurant-review-v1";
+const cacheVersion = "restaurant-review-v2";
 
 //Install
 self.addEventListener("install", event => {
@@ -14,7 +14,7 @@ self.addEventListener("activate", event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cache => {
-          if (cache !== cacheName) {
+          if (cache !== cacheVersion) {
             console.log(`ServiceWorker Clearing Old Cache: ${ cache }`);
             return caches.delete(cache);
           }
@@ -29,23 +29,21 @@ self.addEventListener("fetch", event => {
   console.log("Service Worker Fetching: " + event.request.url);
   // Fetch all the responses and save them to caches
   event.respondWith(
-    fetch(event.request)
-      .then(response => {
-        // Clone of the response
-        let responseClone = response.clone();
-        // Open cache
-        caches.open(cacheName).then(cache => {
-          //Add the response to the cache
-          cache.put(event.request, responseClone);
-        });
-        // Return the original response
-        return response;
-      })
-      .catch(err => {
-        console.log(err);
-        caches
-          .match(event.request)
-          .then(response => response)
-      })
+    // Check the cache first and then fetch the response and put it in the cache
+    caches.open(cacheVersion).then((cache) => {
+      return cache.match(event.request)
+        .then((matched) => {
+          if (matched) {
+            return matched;
+          }
+          return fetch(event.request).then(response => {
+            cache.put(event.request, response.clone());
+            return response;
+          })
+        })
+        .catch(err => {
+          console.log(err);
+        })
+    })
   );
 });
