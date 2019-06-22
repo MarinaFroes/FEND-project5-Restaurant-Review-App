@@ -62,3 +62,4 @@ The HTML and CSS files were validated by the following validators:
 - [WebAIM Page Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [NPM Documentation](https://docs.npmjs.com/)
 - [Intro To Service Workers & Caching Youtube Video](https://www.youtube.com/watch?v=ksXwaWHCW6k)
+- [Make your app work offline with Service Workers](https://www.creativebloq.com/how-to/make-your-app-work-offline-with-service-workers)
