@@ -1,6 +1,7 @@
-![logo](/img/favicon.png) 
-# Restaurant Review App  
-## Udacity Front-End Nanodegree Project 5 - Introduction
+<p align="center"><img src="./img/mylogo.svg" alt="logo" title="logo" width="80"></p>
+<h1 align="center">Restaurant Review App - Udacity Front-End Nanodegree Project 5</h1> 
+
+## Introduction
 
 This Restaurant Review App is the last project of the Udacity Front-End Nanodegree and follows the "Restaurant Review project rubric" and the following style guides provided by Udacity:
 - CSS Style Guide
@@ -14,7 +15,7 @@ The HTML and CSS files were validated by the following validators:
 
 ## Overview
 
-![screenshot](./img/screenshot.png)
+<p align="center"><img src="./img/screenshot.png" alt="screenshot of the page" title="screenshot of the page" width="100%"></p>
 
 ## Udacity Specification
 
